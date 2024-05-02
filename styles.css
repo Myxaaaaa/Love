@@ -57,20 +57,7 @@ body, html {
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
-    color: rgb(232, 6, 228);
-    font-size: 1.5em;
-    text-decoration: none;
-    border: 2px solid rgb(244, 6, 212);
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition: all 0.3s;
-  }
-  .gallery-a {
-    position: absolute;
-    bottom: 50px;
-    left: 65%;
-    transform: translateX(-50%);
-    color: rgb(255, 255, 255);
+    color: white;
     font-size: 1.5em;
     text-decoration: none;
     border: 2px solid white;
@@ -78,7 +65,19 @@ body, html {
     border-radius: 20px;
     transition: all 0.3s;
   }
-
+  .gallery-a {
+    position: absolute;
+    bottom: 50px;
+    left: 90%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 1.5em;
+    text-decoration: none;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: all 0.3s;
+  }
   
   .gallery-link:hover {
     background-color: rgba(255, 255, 255, 0.1);
@@ -104,25 +103,6 @@ body, html {
     }
   }
   
-  .card {
-    width: 80%;
-    max-width: 500px;
-    margin: 50px auto;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-  }
-  
-  .card-content {
-    text-align: center;
-  }
-  
-  p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    margin-bottom: 20px;
-  }
   #video-background {
     position: fixed;
     top: 0;
@@ -160,6 +140,8 @@ body, html {
     overflow-x: auto;
     scroll-snap-type: x mandatory;
     -webkit-overflow-scrolling: touch;
+    gap: 15px;
+    margin-top: 150px;
   }
   
   .gallery-item {
