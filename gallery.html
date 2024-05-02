@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Галерея</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
   <a href="index.html" class="gallery-link">На главную</a>
@@ -14,7 +15,7 @@
     </video>
   </div>
   <div class="gallery">
-    <div class="gallery-slider">
+    <div class="gallery-slider" id="gallerySlider">
       <div class="gallery-item">
         <img src="image1.jpg" alt="Image 1">
       </div>
@@ -34,57 +35,13 @@
         <img src="image6.jpg" alt="Image 6">
       </div>
     </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
 
-  <!-- The Modal -->
   <div id="myModal" class="modal">
     <span class="close" onclick="closeModal()">&times;</span>
     <img class="modal-content" id="img01">
   </div>
 
-  <script>
-    // Gallery Modal
-    var modal = document.getElementById("myModal");
-    var images = document.querySelectorAll(".gallery-item img");
-    var modalImg = document.getElementById("img01");
-    var slideIndex = 0;
-
-    images.forEach(function(img, index) {
-      img.addEventListener("click", function() {
-        modal.style.display = "block";
-        modalImg.src = this.src;
-        slideIndex = index;
-        showSlide(slideIndex);
-      });
-    });
-
-    function closeModal() {
-      modal.style.display = "none";
-    }
-
-    // Gallery Slider
-    function plusSlides(n) {
-      showSlide(slideIndex += n);
-    }
-
-    function showSlide(n) {
-      var slides = document.querySelectorAll(".gallery-item");
-      if (n >= slides.length) {slideIndex = 0}
-      if (n < 0) {slideIndex = slides.length - 1}
-      slides.forEach(function(slide) {
-        slide.style.display = "none";
-      });
-      slides[slideIndex].style.display = "block";
-    }
-
-    // Parallax effect
-    window.addEventListener('scroll', function() {
-      var scrolled = window.pageYOffset;
-      var background = document.getElementById('video-background');
-      background.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
-    });
-  </script>
+  <script src="gallery.js"></script>
 </body>
 </html>
