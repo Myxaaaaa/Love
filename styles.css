@@ -217,3 +217,23 @@ body, html {
   .next:hover {
     color: rgba(255, 255, 255, 0.5);
   }
+
+  .card {
+    width: 80%;
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  .card-content {
+    text-align: center;
+  }
+  
+  p {
+    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
