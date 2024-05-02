@@ -3,8 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Главная</title>
+  <title>Открытка с признанием</title>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="card.css">
 </head>
 <body>
   <div id="video-background">
@@ -12,11 +13,22 @@
       <source src="kani.mp4" type="video/mp4">
     </video>
   </div>
-  <div class="content">
-    <h1>Ты важна для меня</h1>
-    <p>Ты - весь мой мир. Моя любовь к тебе бесконечна.</p>
+  
+  <div class="card">
+    <div class="card-content">
+      <p>Дорогая Каныкей,</p>
+      <p>Я хочу признаться тебе в своих чувствах. Ты - самое важное, что у меня есть. Моя любовь к тебе бесконечна, и я очень ценю тебя. Спасибо, что ты есть в моей жизни.</p>
+      <p>С любовью, Муха</p>
+    </div>
   </div>
-  <a href="gallery.html" class="gallery-link">Посмотреть галерею</a>
-  <a href="card.html" class="gallery-a">Открытка</a>
+  <a href="index.html" class="gallery-a">Вернуться</a>
+  <script>
+    // Parallax effect for video background
+    window.addEventListener('scroll', function() {
+      var scrolled = window.pageYOffset;
+      var background = document.getElementById('video-background');
+      background.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
+    });
+  </script>
 </body>
 </html>
