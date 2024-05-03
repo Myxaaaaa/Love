@@ -51,7 +51,7 @@ body, html {
     margin-bottom: 20px;
   }
   
-  .gallery-link {
+  .gallery-a {
     display: block;
     margin-top: 20px;
     color: white;
@@ -61,6 +61,8 @@ body, html {
     padding: 10px 20px;
     border-radius: 20px;
     transition: all 0.3s;
+    position: absolute;
+    right: 50px;
   }
   
   .gallery-link:hover {

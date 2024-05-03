@@ -23,12 +23,11 @@
   </div>
   <a href="index.html" class="gallery-a">Вернуться</a>
   <script>
-    // Parallax effect for video background
     window.addEventListener('scroll', function() {
       var scrolled = window.pageYOffset;
-      var background = document.getElementById('video-background');
-      background.style.backgroundPositionY = -(scrolled * 0.5) + 'px';
-    });
+      var background = document.getElementById('video-background')
+      background.style.backgroundPositionY = -(scrolled * 0.5) + 'px'
+    })
   </script>
 </body>
 </html>

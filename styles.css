@@ -1,7 +1,6 @@
 body, html {
   margin: 0;
   padding: 0;
-  height: 100%;
 }
 
 #video-background {
@@ -48,7 +47,7 @@ h1 {
 }
 
 p {
-  font-size: 1.5em;
+  font-size: 1em;
   animation: slideIn 2s ease-out;
 }
 .header {
@@ -59,14 +58,31 @@ p {
 .gallery-link { 
   transform: translateX(-50%);
   color: white;
-  font-size: 1.5em;
+  font-size: 1.2em;
   text-decoration: none;
   border: 2px solid white;
-  padding: 5px;
+  padding: 1px;
   border-radius: 20px;
   transition: all 0.3s;
+  position: absolute;
+  top: 650px;
+  right:1px;
+  display: flex;
 }
 
+.gallery-li { 
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1.2em;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 1px;
+  border-radius: 20px;
+  transition: all 0.3s;
+  position: absolute;
+  top: 650px;
+  right: 200px;
+}
 .gallery-link:hover {
   background-color: rgba(255, 255, 255, 0.1);
 }
